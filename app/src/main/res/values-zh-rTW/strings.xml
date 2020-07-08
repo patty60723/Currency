@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">貨幣轉換</string>
+    <string name="button_go">轉換</string>
+    <string name="currency_is">"%1$s 為 "</string>
+    <string name="currency_jpn">日幣</string>
+    <string name="currency_ntd">台幣</string>
+    <string name="currency_usd">美金</string>
+    <string name="empty_ntd_hint">請輸入新台幣金額</string>
+    <string name="none">無</string>
+    <string name="ok">確認</string>
+    <string name="problem_title">有點問題</string>
+    <string name="result_title">結果</string>
+</resources>

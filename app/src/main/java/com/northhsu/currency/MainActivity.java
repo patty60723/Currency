@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (stringNTD.isEmpty()) {
             new AlertDialog.Builder(this)
-                    .setTitle("Problem")
-                    .setMessage("Please enter your NTD amount.")
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    .setTitle(R.string.problem_title) // alt+enter 抽取字串為變數並且可建立多國語言
+                    .setMessage(R.string.empty_ntd_hint)
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             ntd.requestFocus();
@@ -72,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
             jp.setText(valueOf(ntdToJp));
 
             new AlertDialog.Builder(this)
-                    .setTitle("Result")
-                    .setMessage("USD is " + ntdToUs + "\nJPN is " + ntdToJp)
-                    .setPositiveButton("OK", null)
+                    .setTitle(R.string.result_title)
+                    .setMessage(getString(R.string.currency_is, getString(R.string.currency_usd)) + ntdToUs + "\n" + getString(R.string.currency_is, getString(R.string.currency_jpn)) + ntdToJp)
+                    .setPositiveButton(R.string.ok, null)
                     .show();
         }
     }
